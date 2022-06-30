@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/searchItem"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/scanItem"
+        android:title="@string/scan"
+        android:icon="@drawable/ic_pause"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/rssiFilterItem"
+        android:title="@string/rssi_filter"
+        android:icon="@drawable/ic_signal"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/deviceInfoItem"
+        android:title="@string/device_info"
+        android:icon="@drawable/ic_phone_android"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/appVersionItem"
+        android:title="@string/app_version"
+        app:showAsAction="never" />
+
+</menu>

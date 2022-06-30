@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_information"
+            android:textSize="20sp"
+            android:paddingVertical="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/hardwareTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hardware"
+            android:textSize="15sp"
+            android:paddingVertical="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/titleText"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/deviceNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_name"
+            app:layout_constraintTop_toBottomOf="@+id/hardwareTitleText"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/deviceNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Device Name"
+            app:layout_constraintLeft_toRightOf="@+id/deviceNameLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hardwareTitleText" />
+
+        <TextView
+            android:id="@+id/modelLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/model"
+            app:layout_constraintTop_toBottomOf="@+id/deviceNameLabel"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/modelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/modelLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/deviceNameText"
+            app:layout_constraintTop_toBottomOf="@+id/deviceNameText"
+            tools:text="Model" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginVertical="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/modelLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/bleTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth_low_energy"
+            android:paddingVertical="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/phy2MLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high_speed_2m_phy_supported"
+            app:layout_constraintTop_toBottomOf="@id/bleTitleText"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/phy2MText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            app:layout_constraintTop_toBottomOf="@id/bleTitleText"
+            app:layout_constraintLeft_toRightOf="@+id/phy2MLabel"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/phyCodedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/long_range_coded_phy_supported"
+            app:layout_constraintTop_toBottomOf="@id/phy2MLabel"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/phyCodedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            app:layout_constraintLeft_toRightOf="@+id/phyCodedLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/phy2MText"
+            app:layout_constraintTop_toBottomOf="@id/phy2MText" />
+
+        <TextView
+            android:id="@+id/extAdvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extended_advertising_supported"
+            app:layout_constraintTop_toBottomOf="@id/phyCodedLabel"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/extAdvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            app:layout_constraintLeft_toRightOf="@+id/extAdvLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/phyCodedText"
+            app:layout_constraintTop_toBottomOf="@id/phyCodedText" />
+
+        <TextView
+            android:id="@+id/perAdvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/periodic_advertising_supported"
+            android:paddingBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@id/extAdvLabel"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/perAdvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintLeft_toRightOf="@+id/perAdvLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/extAdvText"
+            app:layout_constraintTop_toBottomOf="@id/extAdvText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

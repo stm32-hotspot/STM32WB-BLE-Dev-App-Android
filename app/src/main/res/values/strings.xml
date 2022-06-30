@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BLE Demo</string>
+    <string name="app_version">App Version: </string>
+    <string name="start_scan">Start Scan</string>
+    <string name="stop_scan">Stop Scan</string>
+    <string name="details_desc">LENGTH = Length of EIR packet (Type + Data) in bytes.\nTYPE = The type of data
+        (<a href="https://btprodspecificationrefs.blob.core.windows.net/assigned-numbers/Assigned%20Number%20Types/Generic%20Access%20Profile.pdf">More Info</a>).
+    </string>
+    <string name="raw_data">Raw Data (Hex)</string>
+    <string name="advertising_data">Advertising Data:</string>
+    <string name="scan_response">Scan Response:</string>
+    <string name="details">Details:</string>
+    <string name="len">LEN.</string>
+    <string name="type">TYPE</string>
+    <string name="value">VALUE</string>
+    <string name="ok">OK</string>
+    <string name="rssi_filter">RSSI Filter</string>
+    <string name="read">Read</string>
+    <string name="send_message">Send Message (Hex)</string>
+    <string name="write">Write</string>
+    <string name="notify">Notify</string>
+    <string name="bluetooth_icon">Bluetooth Icon</string>
+    <string name="data">Data</string>
+    <string name="connect">Connect</string>
+    <string name="search">Search</string>
+    <string name="scan">Scan</string>
+    <string name="no_response">No Response</string>
+    <string name="device_info">Device Info</string>
+    <string name="device_information">Device Information</string>
+    <string name="hardware">Hardware</string>
+    <string name="device_name">Device Name:</string>
+    <string name="model">Model:</string>
+    <string name="bluetooth_low_energy">Bluetooth Low Energy</string>
+    <string name="high_speed_2m_phy_supported">High Speed (2M PHY) Supported:</string>
+    <string name="no">NO</string>
+    <string name="long_range_coded_phy_supported">Long Range (Coded PHY) Supported:</string>
+    <string name="extended_advertising_supported">Extended Advertising Supported:</string>
+    <string name="periodic_advertising_supported">Periodic Advertising Supported:</string>
+</resources>
